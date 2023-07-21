@@ -19,6 +19,9 @@ namespace PraticeProblem
                     case 2:
                         DuplicateElement.GetUniqueElement();
                         break;
+                    case 3:
+                        DuplicateElement.GetFrequency();
+                        break;
                 }
             }
         }

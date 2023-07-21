@@ -41,7 +41,7 @@ namespace PraticeProblem
             }
             Console.WriteLine("The count of duplicate items are" + count);
         }
-        internal static void GetUniqueElement()
+        public static void GetUniqueElement()
         {
             Dictionary<string, int> dict = ArrayToDict();
             string uniqueElement = "";
@@ -51,6 +51,15 @@ namespace PraticeProblem
                     uniqueElement += (item+" ");
             }
             Console.WriteLine("The count of unique elements are " + uniqueElement);
+        }
+
+        internal static void GetFrequency()
+        {
+            Dictionary<string, int> dict = ArrayToDict();
+            foreach (var item in dict)
+            {
+                Console.WriteLine("The count of "+item.Key+" is " + item.Value);
+            }
         }
     }
 }
