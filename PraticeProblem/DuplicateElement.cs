@@ -1,8 +1,11 @@
-﻿namespace PraticeProblem
+﻿using System.Collections;
+using System.Collections.Generic;
+
+namespace PraticeProblem
 {
     internal class DuplicateElement
     {
-        public static void GetCount(int choice)
+        public static Dictionary<String,int> ArrayToDict()
         {
             Console.WriteLine("Enter length of the array");
             int length = Convert.ToInt32(Console.ReadLine());
@@ -24,13 +27,30 @@
                     dictionary.Add(key, 1);
                 }
             }            
+            return dictionary;
+        }
+
+        public static void GetCount()
+        {
+            Dictionary<string,int> dict = ArrayToDict();
             int count = 0;
-            foreach (var item in dictionary.Keys)
+            foreach (var item in dict.Keys)
             {
-                if (dictionary[item] > 1)
+                if (dict[item] > 1)
                     count++;
             }
-            Console.WriteLine("The count of duplicate items are"+count);
+            Console.WriteLine("The count of duplicate items are" + count);
+        }
+        internal static void GetUniqueElement()
+        {
+            Dictionary<string, int> dict = ArrayToDict();
+            string uniqueElement = "";
+            foreach (var item in dict.Keys)
+            {
+                if (dict[item] == 1)
+                    uniqueElement += (item+" ");
+            }
+            Console.WriteLine("The count of unique elements are " + uniqueElement);
         }
     }
 }

@@ -14,7 +14,10 @@ namespace PraticeProblem
                 switch (choice)
                 {
                     case 1:
-                        DuplicateElement.GetCount(choice);
+                        DuplicateElement.GetCount();
+                        break;
+                    case 2:
+                        DuplicateElement.GetUniqueElement();
                         break;
                 }
             }
