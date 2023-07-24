@@ -36,9 +36,12 @@ namespace PraticeProblem
                         StringReverse.Reverse();
                         break;
                     case 8:
-                        StringCapital.Capital();
+                        SumOfDigit.GetSum();
                         break;
                     case 9:
+                        StringCapital.Capital();
+                        break;
+                    case 10:
                         lowestSum.GetLower();
                         break;
 
