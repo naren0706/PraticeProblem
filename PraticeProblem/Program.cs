@@ -10,7 +10,7 @@ namespace PraticeProblem
             while (flag)
             {
                 Console.WriteLine("1.count of duplicate element\n2.get unique elements" +
-                    "\n3.get the frequency\n4.Get minimum and maximum of an array\n5.star patten 1\n6.hollow box");
+                    "\n3.get the frequency\n4.Get minimum and maximum of an array\n5.star patten 1\n6.hollow box\n7.word Reverse\n8.Capitalise");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -34,6 +34,9 @@ namespace PraticeProblem
                         break;
                     case 7:
                         StringReverse.Reverse();
+                        break;
+                    case 8:
+                        StringCapital.Capital();
                         break;
                 }
             }
