@@ -38,6 +38,10 @@ namespace PraticeProblem
                     case 8:
                         StringCapital.Capital();
                         break;
+                    case 9:
+                        lowestSum.GetLower();
+                        break;
+
                 }
             }
         }
