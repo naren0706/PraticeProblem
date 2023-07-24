@@ -10,7 +10,7 @@ namespace PraticeProblem
             while (flag)
             {
                 Console.WriteLine("1.count of duplicate element\n2.get unique elements" +
-                    "\n3.get the frequency\n4.Get minimum and maximum of an array\n5.star patten 1");
+                    "\n3.get the frequency\n4.Get minimum and maximum of an array\n5.star patten 1\n6.hollow box");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -28,6 +28,9 @@ namespace PraticeProblem
                         break;
                     case 5:
                         StarPattern.Triangle();
+                        break;
+                    case 6:
+                        StarPattern.HollowBox();
                         break;
                 }
             }
