@@ -32,6 +32,9 @@ namespace PraticeProblem
                     case 6:
                         StarPattern.HollowBox();
                         break;
+                    case 7:
+                        StringReverse.Reverse();
+                        break;
                 }
             }
         }
